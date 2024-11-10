@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaichity</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+
+    <!-- Fontawesome6-Js-link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
+    <!-- Bootstrap5-Css-link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl-carousel-Css-link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Slick slider Css link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Slick swiper Css link -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- select2-Css-link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- fancybox css link -->
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <!-- magnific popup css link -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- aos css link -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Style Css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body onload="preloaderFunction()" class="">
+    <!-- Preloader section start -->
+    <div id="preloader">
+        <img src="./assets/img/preloader/house.png" alt="">
+    </div>
+    <!-- Preloader section end -->
+
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt="ChainCity" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-light fa-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
+                            alt="ChainCity" /></a>
+
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fa-light fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">property</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+                    <li class="nav-item">
+                        <div class="notification-panel">
+                            <button class="dropdown-toggle">
+                                <i class="fal fa-bell" aria-hidden="true"></i>
+                                <span class="count">3</span>
+                            </button>
+                            <ul class="notification-dropdown">
+                                <div class="dropdown-box">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">6 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">1 Day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">3 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="clear-all fixed-bottom">
+                                    <a href="">Clear all</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                                <img src="./assets/img/person/1.jpg" class="img-fluid" alt="ChainCity" />
+                            </div>
+                            <ul class="user-dropdown">
+                                <li>
+                                    <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                                </li>
+                                <li>
+                                    <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                                </li>
+                                <li>
+                                    <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings </a>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="login.html">
+                            <i class="fa-regular fa-user"></i>
+                            login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section end -->
+
+    <!-- Bottom Mobile Tab nav section start -->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasNavbar"
+                href="#offcanvasNavbar" aria-current="page"><i class="fa-light fa-list"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-light fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
+        </li>
+    </ul>
+    <!-- Bottom Mobile Tab nav section end -->
+
+    <!-- Hero section start -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row g-4 g-xxl-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Earn <span class="hero-icon"><i
+                                class="fa-regular fa-arrow-right-long"></i></span> Rewards with Every Click!
+                        <img src="./assets/img/hero/agency_elipse1.png" alt="">
+                    </h1>
+                    <p class="hero-subheadline">Join our community and start earning from the comfort of your home.
+                        Simple, secure, and rewarding!</p>
+                    <div class="mt-20 d-flex gap-3 align-items-center">
+                        <div class="avater-group-box">
+                            <img src="./assets/img/person/1.jpg" alt="">
+                            <img src="./assets/img/person/2.jpg" alt="">
+                            <img src="./assets/img/person/3.jpg" alt="">
+                            <img src="./assets/img/person/4.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <h3 class="mb-0 highlight">2000+</h3>
+                            <p class="mb-0">Happy Customer</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-30">
+                        <a href="" class="round-btn" data-aos="fade-up" data-aos-duration="1100">
+                            <p class="mb-0">learn more</p>
+                            <i class="fa-regular fa-arrow-up"></i>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-side">
+                        <div class="img-box">
+                            <img src="./assets/img/hero/Click here-bro.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature section start -->
+        <div class="feature-section pt-50">
+            <div class="container">
+                <div class="row g-4 mt-20">
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="500">
+                            <div class="img-box">
+                                <img src="./assets/img/feature/decentralization.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">Decentralized System</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="700">
+
+                            <div class="img-box">
+                                <img src="./assets/img/feature/credit-card.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">Banks Payment</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="900">
+
+                            <div class="img-box">
+                                <img src="./assets/img/feature/quality.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">High Reliability</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="500">
+
+                            <div class="img-box">
+                                <img src="./assets/img/feature/salary.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">Earn Extra</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="700">
+
+                            <div class="img-box">
+                                <img src="./assets/img/feature/checklist.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">Buy & Sell</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 feature-item">
+                        <div class="feature-box" data-aos="fade-up" data-aos-duration="900">
+
+                            <div class="img-box">
+                                <img src="./assets/img/feature/broker.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="mb-2">No Middleman</h4>
+                                <p class="mb-0">Lorem ipsum consectetur adipi-sicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.L Ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature section end -->
+    </div>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row g-4 g-xxl-5 justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="img-box" data-aos="fade-up" data-aos-duration="500">
+                        <img src="./assets/img/about/61801-portable-pay-per-click-marketing-strategy-advertising-graphics-network.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-side">
+                        <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500">about us<img
+                                src="./assets/img/arrow-right.png" alt=""></div>
+                        <h2 class="mb-15 mx-lg-start mx-auto" data-aos="fade-up" data-aos-duration="700">We Use Digital
+                            Technology To Improve The Physical World
+                        </h2>
+                        <p class="mt-20" data-aos="fade-up" data-aos-duration="900">A cryptocurrency, crypto-currency,
+                            or crypto is a collection of binary data which is designed to work as a medium of exchange.
+                            Individual coin ownership records are stored in a ledger, which is a computerized database
+                            using strong cryptography to secure transaction records, to control the creation of
+                            additional coins, and to verify the transfer of coin ownership. Try to save</p>
+                        <div data-aos="fade-up" data-aos-duration="1100">
+                            <a href="" class="cmn-btn mt-20">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Pricinig section start -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-top-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500">pricing plan<img
+                                src="./assets/img/arrow-right.png" alt=""></div>
+                        <h2>Fair Pricng For You</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="mb-0">Here are the pricing plans for unlimited business car listings from
+                            the
+                            free
+                            plan to the
+                            Gold. You can buy whatever you like.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-50">
+                <div class="row g-4 g-xxl-5 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box">
+                            <div class="section-header">
+                                <div class="title-area">
+                                    <div class="icon-area"><i class="fa-regular fa-leaf-maple"></i></div>
+                                    <h4 class="title">Free</h4>
+                                </div>
+                                <p>Perfect to get start</p>
+                            </div>
+
+                            <div class="section-body">
+                                <div class="title"><span class="price">$12</span> <span>/month</span></div>
+                                <div class="btn-area mb-30">
+                                    <button type="button" class="cmn-btn w-100">Start free trial</button>
+                                </div>
+                                <ul class="pricing-feature">
+                                    <li><i class="fa-regular fa-circle-check"></i>1 Listing Allowed</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>1 Amenities per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>2 Photos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>2 Videos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>2 Social Items per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>2 Additional Features per Listing</li>
+
+                                    <li><i class="fa-regular fa-circle-xmark cross"></i>Featured Listing Not Allowed
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-xmark cross"></i>Featured Listing Not Allowed
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box featured">
+                            <div class="section-header">
+                                <div class="title-area">
+                                    <div class="icon-area"><i class="fa-regular fa-paper-plane"></i></div>
+                                    <h4 class="title">Basic</h4>
+                                </div>
+                                <p>Best for professionals</p>
+                            </div>
+                            <div class="section-body">
+                                <div class="title"><span class="price">$39</span> <span>/month</span></div>
+                                <div class="btn-area mb-30">
+                                    <button type="button" class="cmn-btn w-100">get started</button>
+                                </div>
+                                <ul class="pricing-feature">
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Listing Allowed</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Amenities per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Photos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Videos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Social Items per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>5 Additional Features per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>Featured Listing Allowed</li>
+                                    <li><i class="fa-regular fa-circle-xmark cross"></i>Featured Listing not Allowed
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box">
+                            <div class="section-header">
+                                <div class="title-area">
+                                    <div class="icon-area">
+                                        <i class="fa-regular fa-bolt"></i>
+                                    </div>
+                                    <h4 class="title">Standard</h4>
+                                </div>
+                                <p>Toolset for hard players</p>
+                            </div>
+                            <div class="section-body">
+                                <div class="title"><span class="price">$129</span> <span>/month</span></div>
+                                <div class="btn-area mb-30">
+                                    <button type="button" class="cmn-btn w-100">get started</button>
+                                </div>
+                                <ul class="pricing-feature">
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Listing Allowed</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Amenities per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Photos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Videos per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Social Items per Listing</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>20 Additional Features per Listing
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>Featured Listing Allowed</li>
+                                    <li><i class="fa-regular fa-circle-check"></i>Featured Listing Allowed</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricinig section end -->
+
+    <!-- Testimonial section start -->
+    <!-- <section class="testimonial-section">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div class="right-side">
+                        <div class="text-center text-md-start">
+                            <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500"><img
+                                    src="./assets/img/arrow-right.png" alt=""> testimonial
+                            </div>
+                            <h2 class="section-title" data-aos="fade-up" data-aos-duration="700"> What's our Customer
+                                say</h2>
+                            <p class="mt-10 mb-10 cmn-para-text" data-aos="fade-up" data-aos-duration="900">chainchity
+                                has
+                                been a game-changer for my event planning
+                                business. The stunning images help me create beautiful presentations that impress my
+                                clients
+                                every time.
+                            </p>
+                        </div>
+                        <div class="owl-carousel owl-theme testimonial-carousel">
+                            <div class="item" data-aos="fade-up" data-aos-duration="500">
+                                <div class="testimonial-box">
+                                    <ul class="reviews">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                    <div class="quote-area">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                            totam
+                                            officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-thumbs">
+                                            <img src="assets/img/person/1.jpg" alt="" />
+                                        </div>
+                                        <div class="profile-title">
+                                            <h6 class="mb-0">Jim Morison</h6>
+                                            <p class="mb-0">London, UK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="500">
+                                <div class="testimonial-box">
+                                    <ul class="reviews">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="quote-area">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                            totam
+                                            officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-thumbs">
+                                            <img src="assets/img/person/2.jpg" alt="" />
+                                        </div>
+                                        <div class="profile-title">
+                                            <h6 class="mb-0">Jim Morison</h6>
+                                            <p class="mb-0">London, UK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="500">
+                                <div class="testimonial-box">
+                                    <ul class="reviews">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="quote-area">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                            totam
+                                            officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-thumbs">
+                                            <img src="assets/img/person/3.jpg" alt="" />
+                                        </div>
+                                        <div class="profile-title">
+                                            <h6 class="mb-0">Jim Morison</h6>
+                                            <p class="mb-0">London, UK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="500">
+                                <div class="testimonial-box">
+                                    <ul class="reviews">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="quote-area">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                            totam
+                                            officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-thumbs">
+                                            <img src="assets/img/person/4.jpg" alt="" />
+                                        </div>
+                                        <div class="profile-title">
+                                            <h6 class="mb-0">Jim Morison</h6>
+                                            <p class="mb-0">London, UK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="left-side text-center" data-aos="fade-up" data-aos-duration="900">
+                        <h3> Testimonials of Trust, Quality, and Exceptional Service in Every Real Estate Experience.
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <!-- Testimonial section end -->
+
+    <!-- latest property section start -->
+    <!-- <section class="latest-property-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500"><img
+                            src="./assets/img/arrow-right.png" alt=""> Latest Properties</div>
+                    <h2 class="section-title mb-0" data-aos="fade-up" data-aos-duration="700">Latest Properties</h2>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end" data-aos="fade-up" data-aos-duration="900">
+                    <a href="" class="kew-btn">
+                        <span class="kew-text">View all properties</span>
+                        <div class="kew-arrow">
+                            <div class="kt-one"><i class="fa-regular fa-arrow-right-long"></i></div>
+                            <div class="kt-two"><i class="fa-regular fa-arrow-right-long"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-30">
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/1.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> Cano, Kano,
+                                        NGA, Canada</p>
+                                    <h4 class="mb-0">$300</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Greece House</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item active"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/2.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> New York, USA</p>
+                                    <h4 class="mb-0">$499</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Garden Vila</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item active"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/3.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> Cano, Kano,
+                                        NGA, Canada</p>
+                                    <h4 class="mb-0">$300</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Sky Apartment</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/4.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> Cano, Kano,
+                                        NGA, Canada</p>
+                                    <h4 class="mb-0">$2000</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Elegant Family Home</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/5.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> Cano, Kano,
+                                        NGA, Canada</p>
+                                    <h4 class="mb-0">$900</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Villa On Grand Avenue</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="property-box">
+                            <div class="rate-area">
+                                <a href="javascript:void(0)" class="item active"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <a href="product-details.html">
+                                    <img src="./assets/img/products/house/6.jpg" alt="chinchity">
+                                </a>
+                                <div class="tag-box">
+                                    <div class="single-tag">Fixed Invest</div>
+                                    <div class="single-tag">Installment</div>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 contact-item align-items-center gap-1"><i
+                                            class="fa-regular fa-location-dot"></i> Cano, Kano,
+                                        NGA, Canada</p>
+                                    <h4 class="mb-0">$300</h4>
+                                </div>
+                                <a class="title" href="product-details.html">Retro House</a>
+                                <div class="meta-data mt-10">
+                                    <div class="review">
+                                        <ul class="reviews d-flex align-items-center gap-2">
+                                            <li>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="active fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <span>(5 reviews)</span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="amenities mt-15">
+                                    <div class="item">
+                                        <i class="fa-regular fa-laptop-code"></i>
+                                        Television
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-air-conditioner"></i>
+                                        Air conditioner
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-regular fa-door-open"></i>
+                                        2 Kitchen
+                                    </div>
+                                </div>
+                                <hr class="cmn-hr2">
+                                <div class="bottom-info">
+                                    <div class="plan-box">
+                                        <div class="item">
+                                            <div class="plan-title">$100.00 (Fixed)</div>
+                                            <p class="mb-0">Profit Range</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">21 days</div>
+                                            <p class="mb-0">Return Interval</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="plan-title">Yes</div>
+                                            <p class="mb-0">Capital back</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cmn-btn2 w-100 mt-15" data-bs-toggle="modal"
+                                        data-bs-target="#propertyBoxModal"><i class="fa-light fa-sack-dollar"></i>invest
+                                        now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- latest property section end -->
+
+    <!-- Commission section start -->
+    <!-- <section class="commission-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6  text-center text-md-start">
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500"><img
+                            src="./assets/img/arrow-right.png" alt=""> With chainchity anyone can
+                        invest?</div>
+                    <h2 data-aos="fade-up" data-aos-duration="700">You Invest. Chaincity Does The Rest</h2>
+                </div>
+                <div class="col-md-6  text-center text-md-start" data-aos="fade-up" data-aos-duration="900">
+                    <p>Invest with Confidence. Chaincity Handles Everything – From Property Management to Maximizing
+                        Your Returns, So You Can Focus on What Matters Most.</p>
+                </div>
+            </div>
+            <div class="mt-50">
+                <div class="working-steps row g-4 g-sm-5 g-lg-4 justify-content-center">
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-duration="500">
+                        <div class="commission-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-users"></i>
+                                <div class="number">01</div>
+                            </div>
+                            <div class="text-area">
+                                <p class="subtitle">Member</p>
+                                <h3 class="title">10000+ </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-duration="700">
+                        <div class="commission-box">
+                            <div class="icon-area">
+                                <i class="fa-sharp fa-regular fa-box"></i>
+                                <div class="number">02</div>
+                            </div>
+                            <div class="text-area">
+                                <p class="subtitle">Investors</p>
+                                <h3 class="title">3000+</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="commission-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-file-certificate"></i>
+                                <div class="number">03</div>
+                            </div>
+                            <div class="text-area">
+                                <p class="subtitle">Years Experience</p>
+                                <h3 class="title">25</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="commission-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-arrow-rotate-left"></i>
+                                <div class="number">04</div>
+                            </div>
+                            <div class="text-area">
+                                <p class="subtitle">Return Upto</p>
+                                <h3 class="title">30%</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="workflow-progress">
+                        <div class="dot">
+                            <img src="./assets/img/commission/dot.png" alt="">
+                        </div>
+                        <div class="map-icon">
+                            <img src="./assets/img/commission/location2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Commission section end -->
+
+    <!-- Blog Section start -->
+    <!-- <section class="blog-section">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6">
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500"><img
+                            src="./assets/img/arrow-right.png" alt=""> news & blogs</div>
+                    <h2 data-aos="fade-up" data-aos-duration="700">Stay Informed with Our Latest News & Insights</h2>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="900">
+                    <p>Explore our blog for expert articles, industry updates, and the latest news to keep you ahead of
+                        the curve in the ever-evolving market.</p>
+                </div>
+
+            </div>
+            <div class="mt-40">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/1.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">The Crypto Economy's
+                                        10 Most Expensive and
+                                        Coveted Assets</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/2.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">Using Meta Advantage
+                                        To Simplify Your
+                                        Facebook Whatsapp Inst</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/3.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">MyBTC Ca Welcomes
+                                        ETH Here's What You Need
+                                        To Know</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/4.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">New High-Yield
+                                        Property Added to Our Exclusive Portfolio</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/5.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">Innovations in Real
+                                        Estate: How Technology is Shaping the Future</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
+                        <div class="blog-box">
+                            <a href="blog-details.html">
+                                <div class="img-box">
+                                    <img src="./assets/img/blog/6.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="text-box">
+                                <h5 class="title"><a class="border-effect" href="blog-details.html">Maximizing Returns:
+                                        Strategies for Investing in Real Estate HYIPs</a></h5>
+                                <ul class="meta">
+                                    <li class="item">
+                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <span>22 sep 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Blog Section end -->
+
+    <!-- Footer Section start -->
+    <section class="footer-section">
+        <div class="container">
+            <!-- <div class="row gy-4 gy-sm-5">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="500">
+                    <div class="footer-widget">
+                        <div class="widget-logo">
+                            <a href="#nav_area"><img class="footer-logo" src="assets/img/logo/logo.png"
+                                    alt="chaichity"></a>
+                        </div>
+                        <p>
+                            Experience the chaichity Advantage - Empowering Social Success with Advanced, Data-Driven
+                            Solutions and Innovative Strategies.
+                        </p>
+
+                        <ul class="social-box mt-30">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-duration="700">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">Quick Links</h5>
+                        <ul>
+                            <li><a class="widget-link" href="about.html">About</a></li>
+                            <li><a class="widget-link" href="faq.html">FAQ</a></li>
+                            <li><a class="widget-link" href="index.html">Home</a></li>
+                            <li><a class="widget-link" href="blog.html">Blog</a></li>
+                            <li><a class="widget-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5" data-aos="fade-up" data-aos-duration="900">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">Company Policy</h5>
+                        <ul>
+                            <li><a class="widget-link" href="policy.html">Privacy Policy</a></li>
+                            <li><a class="widget-link" href="">Refund Policy</a></li>
+                            <li><a class="widget-link" href="">Terms of use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">Newsletter</h5>
+                        <p>Subscribe To Our Mailing List
+                            And Stay Up To Date</p>
+                        <form class="newsletter-form">
+                            <input type="text" class="form-control" placeholder="Your email">
+                            <button type="button" class="subscribe-btn"><i
+                                    class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+            <hr class="cmn-hr">
+            <!-- Copyright-area-start -->
+            <!-- <div class="copyright-area">
+                <div class="row gy-4">
+                    <div class="col-sm-6">
+                        <p>Copyright ©2023 <a class="highlight" href="index.html">chainchity</a> All Rights
+                            Reserved
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="language">
+                            <a href="" class="language">English</a>
+                            <a href="" class="language">Spanish</a>
+                            <a href="" class="language">Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Copyright-area-end -->
+        </div>
+    </section>
+    <!-- Footer Section end -->
+
+
+    <!-- Modal section start -->
+    <div class="modal fade" id="propertyBoxModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel">Invest Now</h4>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Property: Sky Apartment</h5>
+                    <div class="cmn-list mt-10">
+                        <div class="item">
+                            <span>Available fund for investment</span>
+                            <h6>$21900</h6>
+                        </div>
+                        <div class="item">
+                            <span>Investment Amount</span>
+                            <h6>$300</h6>
+                        </div>
+                        <div class="item">
+                            <span>Profit Return</span>
+                            <h6>20.00%</h6>
+                        </div>
+                        <div class="item">
+                            <span>Profit Return Interval</span>
+                            <h6>1 months (20 times)</h6>
+                        </div>
+                        <div class="item">
+                            <span>Total Installment</span>
+                            <h6>3</h6>
+                        </div>
+                        <div class="item">
+                            <span>Installment Duration</span>
+                            <h6>7 Days</h6>
+                        </div>
+                        <div class="item">
+                            <span>Installment Late Fee</span>
+                            <h6>$50</h6>
+                        </div>
+                        <div class="item">
+                            <span>Investment Period</span>
+                            <h6>05 Aug, 2030 10:00 AM</h6>
+                        </div>
+                    </div>
+                    <div class="callout mt-10"><i class="fa-regular fa-info-circle"></i></div>
+                    <hr class="cmn-hr2">
+                    <div id="formModal">
+                        <label class="form-label">Select Wallet</label>
+                        <select class="modal-select" name="state">
+                            <option value="AL">Deposit Balance - $3.03</option>
+                            <option value="AL">Interest Balance -$2.05</option>
+                        </select>
+                    </div>
+                    <div class="form-check mt-10">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Pay Installment</label>
+                    </div>
+                    <div class="callout mt-10">
+                        <i class="fa-regular fa-info-circle"></i>
+                        N.B: If you pay in installments then you have to pay the next installments from the invest
+                        history of your dashboard
+                    </div>
+                    <div class="input-group mt-20">
+                        <input type="number" class="form-control" placeholder="4254.00"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">USD</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cmn-btn2" data-bs-dismiss="modal">Close</button>
+                    <a href="" class="cmn-btn">invest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal section end -->
+
+
+
+
+    <!-- Jquery Js link -->
+    <!-- <script src="assets/js/jquery-3.6.1.min.js"></script> -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Js link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl carausel Js link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper Js link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Slick slider js link -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- select2 Js link -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- fancybox Js link -->
+    <script src="assets/js/fancybox.umd.js"></script>
+    <!-- parallax scroll Js link -->
+    <script src="assets/js/parallax-scroll.js"></script>
+    <!-- counterup Js link -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- isotope Js link -->
+    <!-- <script src="assets/js/isotope.pkgd.min.js"></script> -->
+    <script src="assets/js/isotope.js"></script>
+    <!-- Magnifc popup Js link -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- aos Js link -->
+    <script src="assets/js/aos.js"></script>
+
+
+
+
+
+
+
+    <!-- Main Js link -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
