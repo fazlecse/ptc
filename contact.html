@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChainCity</title>
+    <title>PTCPro</title>
     <!-- Favicon-link -->
     <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
 
@@ -28,17 +28,13 @@
 </head>
 
 <body onload="preloaderFunction()" class="">
-    <!-- Preloader section start -->
-    <div id="preloader">
-        <img src="./assets/img/preloader/house.png" alt="">
-    </div>
-    <!-- Preloader section end -->
+
 
 
     <!-- Nav section start -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt="ChainCity" /></a>
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt="PTCPro" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <i class="fa-light fa-list"></i>
@@ -46,7 +42,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
                     <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
-                            alt="ChainCity" /></a>
+                            alt="PTCPro" /></a>
 
                     <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
                             class="fa-light fa-arrow-right"></i></button>
@@ -60,7 +56,7 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html">property</a>
+                            <a class="nav-link" href="pricing.html">pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faq.html">faq</a>
@@ -140,7 +136,7 @@
                     <li class="nav-item">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="./assets/img/person/1.jpg" class="img-fluid" alt="ChainCity" />
+                                <img src="./assets/img/person/1.jpg" class="img-fluid" alt="PTCPro" />
                             </div>
                             <ul class="user-dropdown">
                                 <li>
@@ -158,17 +154,18 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link login-btn" href="login.html">
                             <i class="fa-regular fa-user"></i>
-                            login
+                            <span class="d-none d-md-block">login</span>
                         </a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Nav section end -->
+
     <!-- Bottom Mobile Tab nav section start -->
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
@@ -217,47 +214,13 @@
     <!-- Contact section start -->
     <section class="contact-section">
         <div class="container">
-            <div class="row g-4 g-xxl-5">
-                <div class="col-lg-6">
-                    <!-- Map section start -->
-                    <div class="map-section">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1668508535036!5m2!1sen!2sbd"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <!-- Map section end -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-message-area">
-                        <div class="contact-header">
-                            <h3 class="section-title">GET IN TOUCH</h3>
-                            <p>Let's Ask Your Questions</p>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="mb-3 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="mb-3 col-md-6">
-                                    <input type="email" class="form-control" placeholder="E-mail Address">
-                                </div>
-                                <div class="mb-3 col-md-12">
-                                    <input type="text" class="form-control" placeholder="Your Subject">
-                                </div>
-                                <div class="mb  -3 col-12">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                        placeholder="Your Massage"></textarea>
-                                </div>
-                            </div>
-                            <div class="btn-area d-flex justify-content-end">
-                                <button type="submit" class="cmn-btn w-100"><span>Send a massage</span></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="text-center mb-50">
+                <div class="section-subtitle">Contact Us <img src="./assets/img/arrow-right.png" alt=""></div>
+                <h2>Keep In Touch With Us.</h2>
+                <p class="mt-10 mb-0">Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt
+                    egetnvallis.</p>
             </div>
-
-            <div class="contact-area mt-50">
+            <div class="contact-area mb-50">
                 <div class="contact-item-list">
                     <div class="row g-4">
                         <div class="col-lg-4 col-md-6">
@@ -296,9 +259,54 @@
                     </div>
                 </div>
             </div>
+            <div class="row g-4 g-xxl-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="left-side">
+                        <div class="img-box">
+                            <img src="./assets/img/contact/contact.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-message-area">
+                        <div class="contact-header">
+                            <h3 class="section-title">Send a Message</h3>
+                            <p>Let's Ask Your Questions</p>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <input type="email" class="form-control" placeholder="E-mail Address">
+                                </div>
+                                <div class="mb-3 col-md-12">
+                                    <input type="text" class="form-control" placeholder="Your Subject">
+                                </div>
+                                <div class="mb  -3 col-12">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                        placeholder="Your Massage"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="submit" class="cmn-btn"><span>Send a massage</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Contact section end -->
+
+    <!-- Map section start -->
+    <div class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1668508535036!5m2!1sen!2sbd"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Map section end -->
 
 
 
@@ -314,7 +322,7 @@
                                     alt="PTCPro"></a>
                         </div>
                         <p>
-                            Experience the ChainCity Advantage - Empowering Social Success with Advanced, Data-Driven
+                            Experience the PTCPro Advantage - Empowering Social Success with Advanced, Data-Driven
                             Solutions and Innovative Strategies.
                         </p>
 

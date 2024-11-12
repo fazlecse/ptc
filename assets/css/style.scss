@@ -60,6 +60,7 @@ Typography
 :root {
     --heading-font: "Inter", sans-serif;
     --body-font: "Inter", sans-serif;
+    --body-font: "Rubik", serif;
     --primary-color: 244, 117, 20;
     --body-color: 51, 51, 51;
     --heading-color: 5, 11, 32;
@@ -648,10 +649,6 @@ Breadcrumb start
 .breadcrumb {
     display: inline-flex;
     justify-content: center;
-    margin-top: 10px;
-    background-color: rgb(var(--white));
-    padding: 7px 20px;
-    border-radius: 9999px;
 
     .breadcrumb-item {
         + {
@@ -4413,6 +4410,20 @@ Cmn table end
     }
 }
 
+@keyframes zoomOut {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.7;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
 @keyframes topToBottom {
     0% {
         top: -5px;
@@ -5203,9 +5214,11 @@ Bottom Mobile, Tab nav end
     position: relative;
 
     .hero-shape {
+        display: none;
+
         .shape-one {
             position: absolute;
-            top: 650px;
+            top: 200px;
             right: 7%;
             animation: rotate 6s infinite linear;
         }
@@ -5214,6 +5227,13 @@ Bottom Mobile, Tab nav end
             position: absolute;
             top: 650px;
             left: 0;
+        }
+
+        .shape-three {
+            position: absolute;
+            top: 550px;
+            left: 45%;
+            animation: zoomOut 5s infinite linear;
         }
     }
 
@@ -5229,7 +5249,7 @@ Bottom Mobile, Tab nav end
     }
 
     .hero-icon {
-        font-size: 45px;
+        font-size: 40px;
         background-color: rgb(var(--primary-color));
         height: 50px;
         padding: 0 50px;
@@ -5238,12 +5258,22 @@ Bottom Mobile, Tab nav end
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        color: rgb(var(--white));
     }
 
     .right-side {
         .img-box {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
+
+            img {
+                -webkit-mask-image: url(../img/hero/shape1.png);
+                mask-image: url(../img/hero/shape1.png);
+                -webkit-mask-size: cover;
+                mask-size: contain;
+                mask-position: center;
+                mask-repeat: no-repeat;
+            }
         }
     }
 }
@@ -5253,6 +5283,14 @@ Bottom Mobile, Tab nav end
 }
 
 // Responsive hero start
+@media(min-width: 992px) {
+    .hero-section {
+        .hero-shape {
+            display: block;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .hero-section {
         padding: 130px 0 50px 0;
@@ -5265,6 +5303,12 @@ Bottom Mobile, Tab nav end
                 height: 55px;
                 width: 110px;
             }
+        }
+
+        .hero-icon {
+            font-size: 30px;
+            height: 35px;
+            padding: 0 30px;
         }
     }
 }
@@ -5346,6 +5390,19 @@ Feature section end
     background-color: var(--bg-color1);
     position: relative;
     z-index: 0;
+
+    .img-box {
+        max-width: 650px;
+        margin: 0 auto;
+        img {
+            -webkit-mask-image: url(../img/hero/shape2.png);
+            mask-image: url(../img/hero/shape2.png);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            mask-position: center;
+            mask-repeat: no-repeat;
+        }
+    }
 
     .left-side {
 
@@ -5589,9 +5646,12 @@ Property section end
     position: relative;
     z-index: 0;
     background-color: var(--bg-color2);
+    overflow: hidden;
 }
 
 .pricing-shape {
+    display: none;
+
     .shape-one {
         position: absolute;
         top: 6%;
@@ -5782,15 +5842,8 @@ Property section end
 
 
 @media (min-width: 992px) {
-    .pricing-box .featured-title {
-        bottom: 100%;
-        right: 0;
-        top: auto;
-        width: 100%;
-        padding: 10px 15px;
-        text-transform: uppercase;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    .pricing-shape {
+        display: block;
     }
 }
 
@@ -5842,11 +5895,11 @@ Pricing section end
 17. Faq section start
 ----------------------------------------------*/
 .faq-section {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color1);
 
     .accordion-button {
         color: rgb(var(--heading-color));
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         border-radius: 10px !important;
 
@@ -5926,6 +5979,15 @@ Faq end
 
     .img-box {
         max-width: 600px;
+
+        img {
+            -webkit-mask-image: url(../img/hero/shape4.png);
+            mask-image: url(../img/hero/shape4.png);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            mask-position: center;
+            mask-repeat: no-repeat;
+        }
     }
 
     .testimonial-box {
@@ -5941,9 +6003,6 @@ Faq end
         }
 
         .profile-thumbs {
-            background-color: rgb(var(--white));
-
-
             img {
                 width: 55px;
                 min-width: 55px;
@@ -6107,7 +6166,7 @@ Testimonial end
         -webkit-line-clamp: 2;
         line-clamp: 2;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .cmn-btn3 {
@@ -6120,7 +6179,7 @@ Testimonial end
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
 
     .left-side {
         display: flex;
@@ -6810,38 +6869,24 @@ Copyright end
     position: relative;
     padding-top: 170px;
     padding-bottom: 90px;
-    background-image: url(../img/banner/pexels-frans.png);
+    background-image: url(../img//background/agency_bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: linear-gradient(rgb(var(--primary-color), 0.5), rgb(var(--primary-color), 0.5));
-        z-index: -1;
-    }
 }
 
 
 
 
 .breadcrumb-area {
-    font-size: 18px;
-    font-weight: 500;
+    // font-weight: 500;
     text-align: center;
-
 
     h3 {
         text-transform: capitalize;
         font-size: 40px;
         margin-bottom: 10px;
-        color: rgb(var(--white));
     }
 }
 
@@ -6874,7 +6919,7 @@ Banner end
 24. Contact section start
 ----------------------------------------------*/
 .contact-section {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color1);
     position: relative;
     z-index: 0;
 }
@@ -6888,9 +6933,9 @@ Banner end
     .item {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
         border: 1px solid var(--border-color1);
-        padding: 15px;
+        padding: 25px;
         border-radius: 10px;
         box-shadow: var(--shadow1);
         background-color: rgb(var(--white));
@@ -6911,12 +6956,23 @@ Banner end
     }
 }
 
+.left-side {
+    .img-box {
+        img {
+            -webkit-mask-image: url(../img/hero/shape2.png);
+            mask-image: url(../img/hero/shape2.png);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-position: center;
+            mask-position: center;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+    }
+}
+
 .contact-message-area {
     background-color: var(--bg-color1);
-    padding: 30px 25px;
-    box-shadow: var(--shadow1);
-    border-radius: 20px;
-    border: 1px solid var(--border-color1);
 
     .contact-header {
         margin-bottom: 30px;
@@ -6938,19 +6994,16 @@ Banner end
 /*----------------------------------------------
 Contact end
 ----------------------------------------------*/
+
 /*----------------------------------------------
 00. Map section start
 ----------------------------------------------*/
 .map-section {
     iframe {
-        margin-bottom: -6px;
+        margin-bottom: -7px;
         width: 100%;
         height: 490px;
-        padding: 5px;
         background-color: rgb(var(--white));
-        box-shadow: var(--shadow1);
-        border-radius: 20px;
-        border: 1px solid var(--border-color1);
     }
 }
 
@@ -7096,7 +7149,7 @@ Login Signup end
 25. Blog details section start
 ----------------------------------------------*/
 .blog-details-section {
-    background: var(--bg-color2);
+    background: var(--bg-color1);
 
     .blog-box-large {
         .thumbs-area {
@@ -7208,7 +7261,7 @@ Login Signup end
 
         a {
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 500;
             display: flex;
             justify-content: space-between;
             color: rgb(var(--heading-color));
@@ -7290,14 +7343,14 @@ Login Signup end
         }
 
         .image-area {
-            width: 80px;
-            min-width: 80px;
+            width: 120px;
+            min-width: 120px;
             height: 80px;
 
             img {
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
+                border-radius: 5px;
                 object-fit: cover;
             }
         }
@@ -7315,7 +7368,7 @@ Login Signup end
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 1.3;
                 color: rgb(var(--heading-color));
                 margin-bottom: 10px;

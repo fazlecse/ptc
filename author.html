@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChainCity</title>
+    <title>PTCPro</title>
     <!-- Favicon-link -->
     <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
 
@@ -29,17 +29,13 @@
 </head>
 
 <body onload="preloaderFunction()" class="">
-    <!-- Preloader section start -->
-    <div id="preloader">
-        <img src="./assets/img/preloader/house.png" alt="">
-    </div>
-    <!-- Preloader section end -->
+
 
 
     <!-- Nav section start -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt="ChainCity" /></a>
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt="PTCPro" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <i class="fa-light fa-list"></i>
@@ -47,7 +43,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
                     <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
-                            alt="ChainCity" /></a>
+                            alt="PTCPro" /></a>
 
                     <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
                             class="fa-light fa-arrow-right"></i></button>
@@ -61,7 +57,7 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html">property</a>
+                            <a class="nav-link" href="pricing.html">pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faq.html">faq</a>
@@ -141,7 +137,7 @@
                     <li class="nav-item">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="./assets/img/person/1.jpg" class="img-fluid" alt="ChainCity" />
+                                <img src="./assets/img/person/1.jpg" class="img-fluid" alt="PTCPro" />
                             </div>
                             <ul class="user-dropdown">
                                 <li>
@@ -159,17 +155,18 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link login-btn" href="login.html">
                             <i class="fa-regular fa-user"></i>
-                            login
+                            <span class="d-none d-md-block">login</span>
                         </a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Nav section end -->
+
     <!-- Bottom Mobile Tab nav section start -->
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
@@ -221,7 +218,7 @@
                     <div class="author-box-top align-items-center">
                         <div class="thumbs-area">
                             <figure>
-                                <img src="./assets/img/person/1.jpg" alt="ChainCity">
+                                <img src="./assets/img/person/1.jpg" alt="PTCPro">
                             </figure>
                         </div>
                         <div class="content-area">
@@ -267,150 +264,299 @@
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6">
-                    <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500">news & blogs</div>
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-duration="500"><img
+                            src="./assets/img/arrow-right.png" alt=""> news & blogs</div>
                     <h2 data-aos="fade-up" data-aos-duration="700">Stay Informed with Our Latest News & Insights</h2>
                 </div>
                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="900">
-                    <p>Explore our blog for expert articles, industry updates, and the latest news to keep you ahead of
+                    <p class="mb-0">Explore our blog for expert articles, industry updates, and the latest news to keep
+                        you ahead of
                         the curve in the ever-evolving market.</p>
                 </div>
 
             </div>
             <div class="mt-40">
-                <div class="row g-4 g-lg-5">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
-                        <div class="blog-box">
+                <div class="row  g-4 g-xl-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="500">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/1.jpg" alt="">
+                                    <img src="assets/img/blog/1.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">The Crypto Economy's
-                                        10 Most Expensive and
-                                        Coveted Assets</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">How to Avoid Scams in the PTC World: A
+                                    Guide to Safe and Profitable Earning</a>
+                                <div class="para-text">
+                                    <p>Learn about Common PTC Scams and How to Stay Safe While Maximizing Your Earnings
+                                        "Navigating the world of pay-per-click (PTC) websites can be rewarding, but it’s
+                                        essential to stay informed about potential scams. In this post, we’ll walk you
+                                        through the most common PTC scams, how to spot them, and proven strategies to
+                                        avoid them. Learn safety tips that will help you earn confidently and securely
+                                        on trusted platforms while steering clear of fraudulent sites."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
-                        <div class="blog-box">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="700">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/2.jpg" alt="">
+                                    <img src="assets/img/blog/2.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">Using Meta Advantage
-                                        To Simplify Your
-                                        Facebook Whatsapp Inst</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">Understanding How PTC Advertising Works
+                                    for Businesses: Boosting Brand Awareness and Driving Conversions</a>
+                                <div class="para-text">
+                                    <p>An In-Depth Guide for Advertisers: The Benefits of PTC Advertising and How to
+                                        Maximize Your ROI
+                                        "Are you looking to boost your business visibility and attract more customers?
+                                        PTC advertising offers a unique, affordable way to reach a targeted audience,
+                                        and this guide will show you how. We’ll explore the key advantages of using PTC
+                                        for your marketing needs, provide insights on crafting effective ad campaigns,
+                                        and share tips on maximizing your return on investment (ROI) with strategic
+                                        placements and user engagement techniques."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
-                        <div class="blog-box">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="900">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/3.jpg" alt="">
+                                    <img src="assets/img/blog/3.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">MyBTC Ca Welcomes
-                                        ETH Here's What You Need
-                                        To Know</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">Exploring Additional Income Streams in
+                                    the Online Space: Expanding Beyond PTC for Financial Success</a>
+                                <div class="para-text">
+                                    <p>Diversify Your Earnings: Discover Additional Online Income Streams Beyond PTC
+                                        "While PTC sites are a great way to earn extra income, exploring other online
+                                        opportunities can further increase your financial rewards. This article covers a
+                                        variety of income streams—from freelance work to affiliate marketing and survey
+                                        sites—that you can combine with PTC earnings. Start building a robust,
+                                        diversified income strategy that suits your lifestyle and goals for a more
+                                        secure financial future."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
-                        <div class="blog-box">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="500">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/4.jpg" alt="">
+                                    <img src="assets/img/blog/4.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">New High-Yield
-                                        Property Added to Our Exclusive Portfolio</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">Top 5 Ways to Increase Your Earnings with
+                                    PTC Sites</a>
+                                <div class="para-text">
+                                    <p>Learn about Common PTC Scams and How to Stay Safe While Maximizing Your Earnings
+                                        "Navigating the world of pay-per-click (PTC) websites can be rewarding, but it’s
+                                        essential to stay informed about potential scams. In this post, we’ll walk you
+                                        through the most common PTC scams, how to spot them, and proven strategies to
+                                        avoid them. Learn safety tips that will help you earn confidently and securely
+                                        on trusted platforms while steering clear of fraudulent sites."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700">
-                        <div class="blog-box">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="700">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/5.jpg" alt="">
+                                    <img src="assets/img/blog/5.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">Innovations in Real
-                                        Estate: How Technology is Shaping the Future</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">Choosing the right ads to click on can be
+                                    the key to maximizing your earnings on PTC sites. </a>
+                                <div class="para-text">
+                                    <p>An In-Depth Guide for Advertisers: The Benefits of PTC Advertising and How to
+                                        Maximize Your ROI
+                                        "Are you looking to boost your business visibility and attract more customers?
+                                        PTC advertising offers a unique, affordable way to reach a targeted audience,
+                                        and this guide will show you how. We’ll explore the key advantages of using PTC
+                                        for your marketing needs, provide insights on crafting effective ad campaigns,
+                                        and share tips on maximizing your return on investment (ROI) with strategic
+                                        placements and user engagement techniques."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
-                        <div class="blog-box">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-box" data-aos="fade-up" data-aos-duration="900">
                             <a href="blog-details.html">
                                 <div class="img-box">
-                                    <img src="./assets/img/blog/6.jpg" alt="">
+                                    <img src="assets/img/blog/6.jpg" alt="">
                                 </div>
                             </a>
                             <div class="text-box">
-                                <h5 class="title"><a class="border-effect" href="blog-details.html">Maximizing Returns:
-                                        Strategies for Investing in Real Estate HYIPs</a></h5>
                                 <ul class="meta">
-                                    <li class="item">
-                                        <a href="author.html"><i class="fa-regular fa-user"></i> admin</a>
-                                    </li>
-                                    <li class="item">
-                                        <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                                        <span>22 sep 2024</span>
-                                    </li>
+                                    <div class="left-side">
+                                        <a href="author.html" class="item">
+                                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                                            <span>by Admin</span>
+                                        </a>
+                                        <div class="item">
+                                            <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                            <span>25</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="item">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                            </span>
+                                            <span>
+                                                April 22, 2024
+                                            </span>
+                                        </div>
+                                    </div>
                                 </ul>
+                                <a class="blog-title" href="blog-details.html">User Success Stories: Real Experiences,
+                                    Real Earnings</a>
+                                <div class="para-text">
+                                    <p>Diversify Your Earnings: Discover Additional Online Income Streams Beyond PTC
+                                        "While PTC sites are a great way to earn extra income, exploring other online
+                                        opportunities can further increase your financial rewards. This article covers a
+                                        variety of income streams—from freelance work to affiliate marketing and survey
+                                        sites—that you can combine with PTC earnings. Start building a robust,
+                                        diversified income strategy that suits your lifestyle and goals for a more
+                                        secure financial future."</p>
+                                </div>
+                                <a href="" class="blog-btn mt-20">Learn more <i
+                                        class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
+
                         </div>
                     </div>
 
@@ -431,7 +577,7 @@
                                     alt="PTCPro"></a>
                         </div>
                         <p>
-                            Experience the ChainCity Advantage - Empowering Social Success with Advanced, Data-Driven
+                            Experience the PTCPro Advantage - Empowering Social Success with Advanced, Data-Driven
                             Solutions and Innovative Strategies.
                         </p>
 
