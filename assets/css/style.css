@@ -292,7 +292,6 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
-  pointer-events: none;
 }
 
 figure {
@@ -1468,7 +1467,7 @@ Offcanvas end
   justify-content: center;
   text-transform: capitalize;
   gap: 5px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .cmn-btn3:hover {
   color: rgb(var(--primary-color));
@@ -1928,6 +1927,10 @@ section {
     font-size: 16px;
   }
 }
+.rtl .section-subtitle img {
+  transform: rotate(180deg);
+}
+
 .social-box {
   display: flex;
   gap: 15px;
@@ -3692,6 +3695,11 @@ Cmn table end
   margin-left: -15px;
 }
 
+.rtl .avater-group-box img:not(:first-child) {
+  margin-left: 0;
+  margin-right: -15px;
+}
+
 /*----------------------------------------------
 Reusable style section end
 ----------------------------------------------*/
@@ -4152,26 +4160,7 @@ Bottom Mobile, Tab nav end
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
-}
-.hero-section .hero-shape {
-  display: none;
-}
-.hero-section .hero-shape .shape-one {
-  position: absolute;
-  top: 200px;
-  right: 7%;
-  animation: rotate 6s infinite linear;
-}
-.hero-section .hero-shape .shape-two {
-  position: absolute;
-  top: 650px;
-  left: 0;
-}
-.hero-section .hero-shape .shape-three {
-  position: absolute;
-  top: 550px;
-  left: 45%;
-  animation: zoomOut 5s infinite linear;
+  overflow: hidden;
 }
 .hero-section .hero-title {
   position: relative;
@@ -4213,11 +4202,6 @@ Bottom Mobile, Tab nav end
   font-size: 18px;
 }
 
-@media (min-width: 992px) {
-  .hero-section .hero-shape {
-    display: block;
-  }
-}
 @media (max-width: 991px) {
   .hero-section {
     padding: 130px 0 50px 0;
@@ -4226,8 +4210,7 @@ Bottom Mobile, Tab nav end
     font-size: 42px;
   }
   .hero-section .hero-title img {
-    height: 55px;
-    width: 110px;
+    display: none;
   }
   .hero-section .hero-icon {
     font-size: 30px;
@@ -4322,170 +4305,6 @@ Feature section end
 About section end
 ----------------------------------------------*/
 /*----------------------------------------------
-00. featured section start
-----------------------------------------------*/
-.featured-section {
-  background-color: var(--bg-color2);
-}
-
-.property-box {
-  border: 1px solid var(--border-color1);
-  border-radius: 20px;
-  transition: var(--transition);
-  overflow: hidden;
-  position: relative;
-  background-color: var(--bg-color1);
-}
-.property-box:hover {
-  box-shadow: var(--shadow1);
-}
-.property-box:hover .img-box img {
-  transform: scale(1.03);
-}
-.property-box .rate-area {
-  top: 15px;
-  left: 15px;
-  position: absolute;
-  z-index: 1;
-  color: rgb(var(--heading-color));
-}
-.property-box .rate-area .item {
-  background-color: rgb(var(--white));
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  box-shadow: var(--shadow3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.property-box .rate-area .item.active, .property-box .rate-area .item:hover {
-  background-color: rgb(var(--primary-color));
-  color: rgb(var(--white));
-}
-.property-box .img-box {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.property-box .img-box img {
-  height: 250px;
-  display: flex;
-  width: 100%;
-  transition: var(--transition);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.property-box .img-box .tag-box {
-  position: absolute;
-  display: flex;
-  gap: 10px;
-  bottom: 0;
-  left: 15px;
-  font-size: 12px;
-  color: rgb(var(--white));
-}
-.property-box .img-box .tag-box .single-tag {
-  background-color: rgb(var(--primary-color));
-  padding: 2px 10px;
-  transform: skew(-15deg);
-}
-.property-box .text-box {
-  padding: 20px;
-  font-size: 14px;
-}
-.property-box .text-box .title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: var(--heading-font);
-  color: rgb(var(--heading-color));
-}
-.property-box .text-box .address {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 20px;
-}
-.property-box .text-box .address i {
-  color: var(--primary-color);
-}
-.property-box hr {
-  border-color: var(--border-color2);
-}
-.property-box .meta-data {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-.property-box .amenities {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 5px;
-}
-.property-box .amenities .item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  white-space: nowrap;
-}
-.property-box .amenities .item i {
-  color: rgb(var(--primary-color));
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgb(var(--primary-color), 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-}
-.property-box .plan-box {
-  display: flex;
-  justify-content: space-between;
-}
-.property-box .plan-box .plan-title {
-  font-size: 16px;
-  font-weight: 600;
-}
-.property-box .plan-box .item:nth-child(1) .plan-title {
-  color: #DF00FF;
-}
-.property-box .plan-box .item:nth-child(2) .plan-title {
-  color: #4666FF;
-}
-.property-box .plan-box .item:nth-child(3) .plan-title {
-  color: #00FF7F;
-}
-.property-box .cmn-btn2 {
-  padding: 6px 20px;
-}
-
-.rtl .property-box .rate-area {
-  right: 15px;
-  left: auto;
-}
-.rtl .property-box .img-box .tag-box {
-  left: auto;
-  right: 15px;
-}
-.rtl .property-box .img-box .tag-box .single-tag {
-  transform: skew(15deg);
-}
-
-/*----------------------------------------------
-Property section end
-----------------------------------------------*/
-/*----------------------------------------------
 08. Pricing section start
 ----------------------------------------------*/
 .pricing-section {
@@ -4523,6 +4342,7 @@ Property section end
   bottom: 200px;
   right: -80px;
   z-index: -1;
+  animation: zoomOut 5s infinite linear;
 }
 
 .pricing-top-box h2,
@@ -4641,10 +4461,6 @@ Property section end
   left: 14px;
 }
 
-.pricing-box.featured .section-header {
-  border-color: var(--primary-color);
-}
-
 @media (min-width: 992px) {
   .pricing-shape {
     display: block;
@@ -4662,15 +4478,8 @@ Property section end
   margin-right: 0;
   margin-left: 10px;
 }
-.rtl .pricing-box .featured-title {
-  left: 15px;
-  right: auto;
-}
-.rtl .prepaid-plan .price-area {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 0;
+.rtl .pricing-box .section-body .pricing-btn {
+  padding: 0 20px 0 7px;
 }
 
 /*----------------------------------------------
@@ -4941,6 +4750,9 @@ Testimonial end
 .rtl .blog-box .blog-author .author-img {
   margin-right: 0;
   margin-left: 10px;
+}
+.rtl .blog-box .blog-btn i {
+  transform: rotate(180deg);
 }
 
 /*----------------------------------------------
@@ -5543,28 +5355,32 @@ Map section end
 24. Login Signup section start
 ----------------------------------------------*/
 .login-signup-section {
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color1);
 }
 
-.login-signup-box {
-  border: 1px solid var(--border-color1);
-  background-color: var(--bg-color1);
-  box-shadow: var(--shadow1);
-  border-radius: 20px;
-}
-.login-signup-box .img-box {
+.login-signup-img-box {
   height: 100%;
 }
-.login-signup-box .img-box img {
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+.login-signup-img-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-image: url(../img/hero/shape2.png);
+  mask-image: url(../img/hero/shape2.png);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .login-signup-form {
   padding: 30px;
   z-index: 1;
   position: relative;
+  background-color: rgb(var(--white));
+  border: 1px solid var(--border-color1);
+  border-radius: 20px;
 }
 .login-signup-form .logo-area {
   margin-bottom: 20px;
@@ -5998,148 +5814,4 @@ Policy section end
 }
 /*----------------------------------------------
 Error end
-----------------------------------------------*/
-/*----------------------------------------------
-00. Author section start
-----------------------------------------------*/
-.social-reaction {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.social-reaction .item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.social-reaction .item a {
-  display: flex;
-  align-items: center;
-  padding: 2px 10px;
-  border-radius: 9999px;
-  gap: 5px;
-}
-.social-reaction .item a:hover {
-  background-color: hsl(var(--base)/0.05);
-}
-.social-reaction .item .count {
-  padding: 2px 15px;
-  background-color: hsl(var(--base)/0.05);
-  border-radius: 9999px;
-}
-
-/*----------------------------------------------
-Author section end
-----------------------------------------------*/
-/*----------------------------------------------
-00. Banner slider section start
-----------------------------------------------*/
-.banner-slider-section {
-  margin-top: 80px;
-}
-
-.banner-slider {
-  overflow: hidden;
-}
-.banner-slider:hover .owl-nav .owl-prev,
-.banner-slider:hover .owl-nav .owl-next {
-  opacity: 1;
-}
-.banner-slider:hover .owl-nav .owl-prev {
-  left: 0;
-}
-.banner-slider:hover .owl-nav .owl-next {
-  right: 0;
-}
-.banner-slider .owl-nav .owl-prev,
-.banner-slider .owl-nav .owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50% !important;
-  background: rgb(var(--primary-color)) !important;
-  background-size: 200% auto !important;
-  color: rgb(var(--white)) !important;
-  font-size: 20px !important;
-  transition: var(--transition);
-  opacity: 0;
-}
-.banner-slider .owl-nav .owl-prev:hover,
-.banner-slider .owl-nav .owl-next:hover {
-  background-position: center right !important;
-}
-.banner-slider .owl-nav .owl-prev {
-  left: calc(0% - 25px);
-}
-.banner-slider .owl-nav .owl-next {
-  right: calc(0% - 25px);
-}
-.banner-slider .owl-stage-outer {
-  padding: 0;
-}
-.banner-slider .item a {
-  cursor: url(../img/cursor/pointer.png), auto;
-}
-.banner-slider .item a img {
-  max-height: 400px;
-}
-
-/*----------------------------------------------
-Banner slider section end
-----------------------------------------------*/
-/*----------------------------------------------
-Investor profile section start
-----------------------------------------------*/
-.investor-profile-section {
-  background-color: var(--bg-color2);
-}
-.investor-profile-section .sidebar {
-  position: sticky;
-  top: 90px;
-}
-
-.investor-profile-box {
-  max-width: 280px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.investor-profile-box .img-box img {
-  border-radius: 40px;
-}
-.investor-profile-box .text-box {
-  text-align: center;
-}
-.investor-profile-box .text-box .total-property-count {
-  background-color: rgb(var(--primary-color));
-  display: inline-flex;
-  padding: 2px 10px;
-  border-radius: 9999px;
-  color: rgb(var(--white));
-}
-
-@media (min-width: 768px) {
-  .investor-profile-section {
-    background-color: var(--bg-color2);
-  }
-  .investor-profile-section .property-box {
-    display: flex;
-    height: 100%;
-  }
-  .investor-profile-section .property-box .img-box {
-    width: 40%;
-  }
-  .investor-profile-section .property-box .img-box img {
-    height: 100%;
-  }
-  .investor-profile-section .property-box .text-box {
-    width: 60%;
-    padding: 20px;
-  }
-}
-/*----------------------------------------------
-Investor profile section end
 ----------------------------------------------*/
